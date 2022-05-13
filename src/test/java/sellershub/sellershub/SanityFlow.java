@@ -83,7 +83,23 @@ public class SanityFlow extends generalMethods   {
 	
 	public void integration() throws InterruptedException 
 	{
-		
+		navigateToUrl();
+		Thread.sleep(3000);
+		assertEquals("Sellers Hub",driver.getTitle());
+		Thread.sleep(3000);
+		loginToTheWebsite("support@sellershub.io","demo12345");
+		Thread.sleep(3000);
+		integrationClick();
+		channelIntegrationClick();
+		Thread.sleep(3000);
+		addIntegrationClick();
+		addMarketplaceClick();
+		ebayIntegrationClick();
+		ebayDetailsClick();
+		Thread.sleep(3000);
+		//ebayDialogClick();
+		//Thread.sleep(5000);
+		//logOut();
 	}
 	
 	public void addproduct() throws InterruptedException 
