@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="sellershub" parallel="classes" thread-count="1"> 
+    <test name="sellershub" >
+   <packages>
+			 <package name="sellershub.sellershubio"></package>
+		</packages>
+	</test>	    
+</suite>
